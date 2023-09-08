@@ -21,11 +21,12 @@ Create a walkthrough video provide a link to the video that demonstrates its fun
  
 ├── examples/           // Example svg file(s) created with the app
 ├── lib/                // Folder for classes or functions
-    ├── shapes.js       // Exports `Triangle`, `Circle`, and `Square` classes
+    ├── shapes.js   	// Exports `Triangle`, `Circle`, and `Square` classes
+	svg.js    	// Writes out logo.svg file
     ├── shapes.test.js  // Jest tests for shapes
     └── svg.test.js     // Jest tests for svg code
 ├── .gitignore          // Indicates which folders and files Git should ignore
-├── index.js            // Runs the application using imports from lib/
+├── index.js            // Main program: runs the application using imports from lib/
 ├── package.json
 └── README.md           // App description, link to video, setup and usage instructions           
 11. The application will be invoked by using the following cli command: <index.js> while on the ./SVGLogoMaker directory.
@@ -65,6 +66,8 @@ const shape = new Triangle();
 shape.setColor("blue");
 expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
 ```
+
+
 
 
 
